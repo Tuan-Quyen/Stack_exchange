@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itembtn_fruser"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/itembtnfruser_imvuser"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itembtnuser_tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/colorTextQuestion"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/itembtnfruser_imvuser"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itembtnfruser_tvuserreputation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColor="@color/colorDarkWhite"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_imvuser"
+        app:layout_constraintTop_toBottomOf="@+id/itembtnuser_tvusername" />
+
+    <ImageView
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:id="@+id/itembtnfruser_imvusergold"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/view_achivementgold"
+        app:layout_constraintTop_toTopOf="@+id/itembtnfruser_tvuserreputation"
+        app:layout_constraintBottom_toBottomOf="@+id/itembtnfruser_tvuserreputation"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_tvuserreputation" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itembtnfruser_tvusergold"
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/colorDarkWhite"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintTop_toTopOf="@+id/itembtnfruser_imvusergold"
+        app:layout_constraintBottom_toBottomOf="@+id/itembtnfruser_imvusergold"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_imvusergold" />
+    <ImageView
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:id="@+id/itembtnfruser_imvusersilver"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/view_achivementsliver"
+        app:layout_constraintTop_toTopOf="@+id/itembtnfruser_tvusergold"
+        app:layout_constraintBottom_toBottomOf="@+id/itembtnfruser_tvusergold"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_tvusergold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itembtnfruser_tvusersilver"
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/colorDarkWhite"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintTop_toTopOf="@+id/itembtnfruser_imvusersilver"
+        app:layout_constraintBottom_toBottomOf="@+id/itembtnfruser_imvusersilver"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_imvusersilver" />
+    <ImageView
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:id="@+id/itembtnfruser_imvuserbronze"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/view_achivementbronze"
+        app:layout_constraintTop_toTopOf="@+id/itembtnfruser_tvusersilver"
+        app:layout_constraintBottom_toBottomOf="@+id/itembtnfruser_tvusersilver"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_tvusersilver" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itembtnfruser_tvuserbronze"
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/colorDarkWhite"
+        android:layout_marginLeft="3dp"
+        app:layout_constraintTop_toTopOf="@+id/itembtnfruser_imvuserbronze"
+        app:layout_constraintBottom_toBottomOf="@+id/itembtnfruser_imvuserbronze"
+        app:layout_constraintStart_toEndOf="@+id/itembtnfruser_imvuserbronze" />
+</android.support.constraint.ConstraintLayout>

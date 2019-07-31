@@ -1,0 +1,53 @@
+{
+  "project_info": {
+    "project_number": "670656482899",
+    "firebase_url": "https://stack-exchange-226703.firebaseio.com",
+    "project_id": "stack-exchange-226703",
+    "storage_bucket": "stack-exchange-226703.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670656482899:android:969d88bf3ba6c72b",
+        "android_client_info": {
+          "package_name": "com.android.quyentraining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670656482899-lurf34o1qugfgiktsgfrp6cg77kss7hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.quyentraining",
+            "certificate_hash": "00293aa06a68c3021d548283d36ddee89c9a36f4"
+          }
+        },
+        {
+          "client_id": "670656482899-cphg9okaoqpq92hb7a3no7p7r2af08vv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0n_harMG1v3vid_FXt0RUCC0z3-aIOWc"
+        },
+        {
+          "current_key": "AIzaSyBXqkhoNAMo3cEEPPPK7FbweCWvoJAWxew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

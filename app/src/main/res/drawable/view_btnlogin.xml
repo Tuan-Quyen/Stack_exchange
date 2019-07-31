@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--item is Pressed-->
+    <item android:state_pressed="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"
+            android:padding="90dp">
+            <solid android:color="@color/colorBluePress"></solid>
+            <corners android:radius="@dimen/_2sdp"></corners>
+        </shape>
+    </item>
+    <!--item is unPressed-->
+    <item android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"
+            android:padding="90dp">
+            <solid android:color="@color/colorBtnBlue"></solid>
+            <corners android:radius="@dimen/_2sdp"></corners>
+        </shape>
+    </item>
+</selector>

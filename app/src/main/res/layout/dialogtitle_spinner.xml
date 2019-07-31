@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorBlueTitleDialog">
+    <TextView
+        android:clickable="true"
+        android:id="@+id/dialogTitle_tvQuestion"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        android:text="@string/Questions"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_5sdp"/>
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/dialogTitle_tvTag"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        android:text="@string/Tags"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_5sdp"/>
+    <TextView
+        android:clickable="true"
+        android:id="@+id/dialogTitle_tvUser"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        android:text="@string/Users"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_5sdp"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlueLightTrans">#9551ccfd</color>
+    <color name="colorBlueLightPress">#b03498db</color>
+    <color name="colorBlueLight">#F7FDFF</color>
+    <color name="colorBluePress">#b9486ba9</color>
+    <color name="colorBlue">#3F5890</color>
+    <color name="colorDarkNav">#1E2531</color>
+    <color name="colorDarkNavGroup">#29303C</color>
+    <color name="colorBlueBar">#334B77</color>
+    <color name="colorBlueTitleDialog">#324B77</color>
+    <color name="colorBlueDark">#2A3A5C</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorDarkWhite">#7f8287</color>
+    <color name="colorDarkWhiteSearch">#d0dbe4</color>
+    <color name="colorLightWhiteSearch">#e2e4e6</color>
+    <color name="colorDark">#000000</color>
+    <color name="colorTrans">#00ffffff</color>
+    <color name="colorGreenlight">#b86de699</color>
+    <color name="colorYellow">#fbff13</color>
+    <color name="colorGray">#c2c2bf</color>
+    <color name="colorbrown">#8c3400</color>
+    <color name="colorLink">#0645AD</color>
+    <color name="colorText">#316FBA</color>
+    <color name="colorFooter">#2A3D61</color>
+    <color name="colorBtnBlue">#4A6FB1</color>
+    <color name="colorTextQuestion">#326EB5</color>
+    <color name="colorDetailBackGround">#EAEFF3</color>
+    <color name="colorItemDetail">#e9f1f7</color>
+    <color name="colorRed">#d0e13540</color>
+    <color name="colorNumberAnswer">#108f4f</color>
+    <color name="colorLocationClick">#2E74FF</color>
+</resources>

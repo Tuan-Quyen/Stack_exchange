@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_300sdp"
+    android:layout_height="@dimen/_150sdp"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/dialogconnection_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogconnection_tvmain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogconnection_tv"></TextView>
+    <TextView
+        android:id="@+id/dialogconnection_btnok"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:gravity="center"
+        android:text="@string/ok"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogconnection_tvmain"
+        android:background="?selectableItemBackground"/>
+</android.support.constraint.ConstraintLayout>

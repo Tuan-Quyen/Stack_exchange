@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:id="@+id/itembtn_frtag"
+    android:background="@drawable/view_btntag">
+
+    <TextView
+        android:id="@+id/itemfrtag_tvtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_btntagtv"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemfrtag_tvnumbertag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/colorDarkWhite"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_10sdp"
+        />
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_listlocation_btn"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/_40sdp"
+    android:background="?selectableItemBackground">
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:id="@+id/item_listlocation_imv"/>
+    <TextView
+        android:id="@+id/item_listlocation_tv"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/_15sdp"/>
+</LinearLayout>

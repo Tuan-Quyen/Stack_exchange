@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_10sdp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkWhiteSearch"></View>
+    <LinearLayout
+        android:id="@+id/itemDetailQuestion_ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/_130sdp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="WebViewLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="60dp"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:background="@color/colorItemDetail">
+
+            <ImageView
+                android:id="@+id/itemDetailQuestion_btnVoteUp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="true"
+                android:rotation="180"
+                android:src="@drawable/view_btnvote" />
+
+            <TextView
+                android:id="@+id/itemDetailQuestion_tvVote"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/itemDetailQuestion_btnVoteDown"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:clickable="true"
+                android:src="@drawable/view_btnvote" />
+
+            <ImageView
+                android:id="@+id/itemDetailQuestion_btnAccepted"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:clickable="true"
+                android:src="@drawable/ic_done_black_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorDarkWhiteSearch"></View>
+
+        <WebView
+            android:id="@+id/itemDetailQuestion_wv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+    </LinearLayout>
+    <View
+        android:id="@+id/itemDetailQuestion_viewLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkWhiteSearch"></View>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/itemDetailQuestion_clAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorWhite">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/itemDetailQuestion_btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:paddingHorizontal="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/ic_share"
+                android:tint="@color/colorDarkWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/itemDetailQuestion_tvShare"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/itemDetailQuestion_tvShare"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Share"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/itemDetailQuestion_viewLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkWhiteSearch"></View>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/itemDetailQuestion_userPost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/itemDetailQuestion_imvuser"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textColor="@color/colorTextQuestion"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/itemDetailQuestion_imvuser"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvuserreputation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textColor="@color/colorDarkWhite"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_imvuser"
+            app:layout_constraintTop_toBottomOf="@+id/itemDetailQuestion_tvusername" />
+
+        <ImageView
+            android:id="@+id/itemDetailQuestion_imvusergold"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/view_achivementgold"
+            app:layout_constraintBottom_toBottomOf="@+id/itemDetailQuestion_tvuserreputation"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_tvuserreputation"
+            app:layout_constraintTop_toTopOf="@+id/itemDetailQuestion_tvuserreputation" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvusergold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="123233asdsadsa"
+            android:visibility="gone"
+            android:textColor="@color/colorDarkWhite"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemDetailQuestion_imvusergold"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_imvusergold"
+            app:layout_constraintTop_toTopOf="@+id/itemDetailQuestion_imvusergold" />
+
+        <ImageView
+            android:id="@+id/itemDetailQuestion_imvusersilver"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:src="@drawable/view_achivementsliver"
+            app:layout_constraintBottom_toBottomOf="@+id/itemDetailQuestion_tvusergold"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_tvusergold"
+            app:layout_constraintTop_toTopOf="@+id/itemDetailQuestion_tvusergold" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvusersilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:text="12323"
+            android:textColor="@color/colorDarkWhite"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemDetailQuestion_imvusersilver"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_imvusersilver"
+            app:layout_constraintTop_toTopOf="@+id/itemDetailQuestion_imvusersilver" />
+
+        <ImageView
+            android:id="@+id/itemDetailQuestion_imvuserbronze"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/view_achivementbronze"
+            app:layout_constraintBottom_toBottomOf="@+id/itemDetailQuestion_tvusersilver"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_tvusersilver"
+            app:layout_constraintTop_toTopOf="@+id/itemDetailQuestion_tvusersilver" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvuserbronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:text="123233"
+            android:textColor="@color/colorDarkWhite"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/itemDetailQuestion_imvuserbronze"
+            app:layout_constraintStart_toEndOf="@+id/itemDetailQuestion_imvuserbronze"
+            app:layout_constraintTop_toTopOf="@+id/itemDetailQuestion_imvuserbronze" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvstatusedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemDetailQuestion_tvdaypost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemDetailQuestion_tvstatusedit" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
